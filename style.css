@@ -46,7 +46,6 @@ ul {
 #profile-img {
     padding-right: 20%;
 }
-
 #logo-space {
     display: flex;
     width: 100%;
@@ -56,4 +55,40 @@ ul {
 #googlelogo {
     align-self: flex-end;
     object-fit: none;
+}
+
+#search {
+    padding: 0.5%;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.search-entry {
+    font-size: 1.9rem;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    height: 100%;
+}
+
+#searchlogo {
+    float: left;
+}
+#miclogo {
+    float: right;
+}
+
+#centerbutton {
+    margin: 0 auto;
+    padding-top: 2%;
+    width: 20%;
+}
+input[type=button] {
+    font-size: 1rem;
+    padding: 3%;
+    margin-right: 2%;
 }
