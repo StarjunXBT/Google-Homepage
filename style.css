@@ -2,9 +2,17 @@
     margin: 0;
     padding: 0;
 }
-html {
-    font-size: 14px;
+body {
+    width: 100%;
+    max-width: 100%;
 }
+html, body {
+    margin: 0; height: 100%; overflow: hidden
+}
+html {
+    font-size: 25px;
+}
+
 #navbar {
     display: flex;
     flex-direction: row;
@@ -12,27 +20,21 @@ html {
     align-items: center;
     width: 100%;
     max-width: 100%;
-    padding-top: 0.5%;
 }
 ul, li {
     display: inline-flex;
 }
 #profile-img {
     border-radius: 50%;
-    line-height: 3em;
-    height: 60%;
-}
-#app-img {
-    width: 1.3%;
-    height: 60%;
+    width: 100%;
 }
 .nav-link {
     list-style-type: none;
-    padding-right: 4%;
 }
 li {
     font-family: 'Uchen', serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding-right: 2%;
 }
 .nav-link:hover {
     text-decoration: underline;
@@ -41,10 +43,12 @@ ul {
     padding-right: 2%;
 }
 #app-img {
+    width: 1.5%;
     padding-right: 0.5%;
 }
 #profile-img {
-    padding-right: 20%;
+    width: 100%;
+
 }
 #logo-space {
     display: flex;
@@ -58,6 +62,8 @@ ul {
 }
 
 #search {
+    display: flex;
+    justify-content: space-between;
     padding: 0.5%;
     border: 1px solid black;
     border-radius: 30px;
@@ -66,29 +72,88 @@ ul {
 }
 
 .search-entry {
-    font-size: 1.9rem;
+    align-self: stretch;
     border: none;
     outline: none;
-    margin: 0 auto;
     padding: 0;
     width: 90%;
-    height: 100%;
+    max-width: 90%;
+    height: auto;
 }
 
 #searchlogo {
-    float: left;
+    align-self: flex-start;
 }
 #miclogo {
-    float: right;
+    width: 2%;
+    max-width: 10%;
+    align-self: right;
 }
 
 #centerbutton {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding-top: 2%;
-    width: 20%;
+    width: 100%;
 }
 input[type=button] {
-    font-size: 1rem;
-    padding: 3%;
+    border: none;
+    outline: none;
+    font-size: 0.7rem;
+    border: 1px thin gray;
+    padding: 0.8%;
     margin-right: 2%;
+}
+
+#footer {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Uchen', serif;
+    background-color: #f2f2f2;
+    border-top: 1px thin gray;
+}
+#footer a {
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: #70757a;
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 12px;
+    }
+    #search {
+        width: 50%;
+        padding: 2%;
+    }
+    #app-img {
+        width: 4%;
+    }
+    #footer a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    html {
+        font-size: 50%;
+    }
+    #miclogo {
+        width: 4%;
+    }
+    input[type=button] {
+        padding: 2%;
+        font-size: 1.5rem;
+    }
+    #search {
+        width: 70%;
+    }
+    #footer {
+        flex-direction: column;
+    }
 }
