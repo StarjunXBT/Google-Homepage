@@ -84,10 +84,7 @@ ul {
 #searchlogo {
     align-self: flex-start;
 }
-#miclogo {
-    width: 4%;
-    max-width: 4%;
-}
+
 
 #centerbutton {
     display: flex;
