@@ -84,6 +84,9 @@ ul {
 #searchlogo {
     align-self: flex-start;
 }
+#mic {
+    float: right;
+}
 
 
 #centerbutton {
