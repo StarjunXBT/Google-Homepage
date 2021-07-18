@@ -86,7 +86,7 @@ ul {
 }
 #miclogo {
     width: 2%;
-    max-width: 10%;
+    max-width: 5%;
     align-self: right;
 }
 
@@ -108,9 +108,9 @@ input[type=button] {
 
 #footer {
     display: flex;
-    position: absolute;
-    justify-content: space-between;
+    position: fixed;
     bottom: 0;
+    justify-content: space-between;
     width: 100%;
     max-width: 100%;
     font-family: 'Uchen', serif;
@@ -123,23 +123,8 @@ input[type=button] {
     color: #70757a;
 }
 
-@media screen and (max-width:768px) {
-    html {
-        font-size: 12px;
-    }
-    #search {
-        width: 50%;
-        padding: 2%;
-    }
-    #app-img {
-        width: 4%;
-    }
-    #footer a {
-        font-size: 1rem;
-    }
-}
 
-@media only screen and (max-width:600px) {
+@media (max-width:768px) {
     html {
         font-size: 50%;
     }
