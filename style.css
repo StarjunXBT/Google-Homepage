@@ -124,7 +124,7 @@ input[type=button] {
 }
 
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
     html {
         font-size: 50%;
     }
@@ -136,10 +136,14 @@ input[type=button] {
         width: 70%;
         max-width: 70%;
     }
-    #miclogo {
-        display: none;
-    }
     #footer {
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width:770px) {
+    #miclogo {
+        width: 5%;
+        max-width: 5%;
     }
 }
