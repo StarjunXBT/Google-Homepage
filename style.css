@@ -133,7 +133,7 @@ input[type=button] {
         font-size: 1.5rem;
     }
     #search {
-        width: 70%;
+        width: 30%;
     }
     #footer {
         flex-direction: column;
