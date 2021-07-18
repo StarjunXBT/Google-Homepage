@@ -135,7 +135,9 @@ input[type=button] {
     #search {
         width: 70%;
         max-width: 70%;
-        max-height: 10%;
+    }
+    #miclogo {
+        display: none;
     }
     #footer {
         flex-direction: column;
