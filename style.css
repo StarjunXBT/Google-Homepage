@@ -128,9 +128,6 @@ input[type=button] {
     html {
         font-size: 50%;
     }
-    #miclogo {
-        width: 4%;
-    }
     input[type=button] {
         padding: 2%;
         font-size: 1.5rem;
